@@ -14,8 +14,6 @@ FROM base
 
 EXPOSE 5000
 COPY --from=builder /install /usr/local
-COPY . /TakeOnDBLoad
-WORKDIR /TakeOnDBLoad
 
 # run the application
-CMD ["python", "/TakeOnDBLoad/flask_app.py"]
+CMD ["python", "hello.py"]
