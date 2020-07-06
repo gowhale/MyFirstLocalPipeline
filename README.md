@@ -10,5 +10,5 @@ Once a pipeline automates a series of events it speeds up development time and m
 
 Some great resources I used to learn about concourse and related subjects: 
 
-    * [Concourse Tutorial](https://concoursetutorial.com/)
-    * [Docker Labs](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md#232-write-a-dockerfile)
+* [Concourse Tutorial](https://concoursetutorial.com/)
+* [Docker Labs](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md#232-write-a-dockerfile)
