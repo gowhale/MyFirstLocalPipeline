@@ -16,7 +16,10 @@ resources:
   - name: docker-config-flask
     type: docker-image
     source:
-      repository: https://github.com/gowhale/docker-image-resource.git
+      email: ((docker-hub-email))
+      username: ((docker-hub-username))
+      password: ((docker-hub-password))
+      repository: ((docker-hub-username))/flask
 
 
 jobs:
