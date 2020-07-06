@@ -6,10 +6,6 @@ resources:
       uri: https://github.com/gowhale/MyFirstLocalPipeline.git
       branch: master
 
-  - name: my-timer
-    type: time
-    source:
-      interval: 2m
 
 jobs:
   - name: gowhale-hello-world
@@ -17,7 +13,6 @@ jobs:
     serial: true
     plan:
       - get: resource-tutorial
-      - get: my-timer
         trigger: true
       - task: hello-world
         file: resource-tutorial/hello_world.yml
