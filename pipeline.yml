@@ -12,7 +12,7 @@ resources:
       interval: 2m
 
 jobs:
-  - name: job-hello-world
+  - name: gowhale-hello-world
     public: true
     serial: true
     plan:
