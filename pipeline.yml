@@ -43,4 +43,16 @@ jobs:
           build: resource-tutorial
           tag_as_latest: true
 
+  - name: "gowhale-Deploy-Application"
+    public: false
+    plan:
+      - aggregate:
+        - get: docker-config-flask
+          trigger: true
+          # When specified, only the versions of the resource
+          # that made it through the given list of jobs will be considered when
+          # triggering and fetching.
+          passed:
+            - "DB-Docker-Build"
+
 
